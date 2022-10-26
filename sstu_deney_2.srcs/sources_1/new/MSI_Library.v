@@ -30,6 +30,67 @@ always @(in) begin
 end
 endmodule
 
+module ENCODER(
+input [3:0] in,
+output   [1:0] out, //structural yazarken reg'i sil
+output  V);
+wire [5:0] temp;
+
+or_gate or1(in[3],in[2],out[1]); //O1
+not_gate not1(in[2],temp[5]); //O0 icin I2'
+and_gate and1(temp[5],in[1],temp[4]); //O0 icin I2'I1
+or_gate or2(temp[4],in[3],out[0]); //O0
+
+or_gate or3(in[3],in[2],temp[3]); //V icin A+B
+or_gate or4(temp[3],in[1],temp[2]); //V icin A+B+C
+or_gate or5(temp[2],in[0],V); //V
+
+//always @(in) begin 
+//    casez(in)
+//    4'b0000 : begin  out=2'b??;  V=1'b0; end
+//    4'b0001 : begin  out=2'b00;  V=1'b1; end
+//    4'b001? : begin  out=2'b01;  V=1'b1; end
+//    4'b01?? : begin  out=2'b10;  V=1'b1; end
+//    4'b1??? : begin  out=2'b11;  V=1'b1; end
+//    endcase
+    
+//end   
+
+endmodule
+
+
+module MUX(input [3:0] D,
+        input  [1:0] S,
+        //output wire O); //for assign and logic operators
+        output reg O); //for always and case
+        
+        //assign and logic operators
+        
+//        wire [3:0] enables;
+        
+//        assign enables[0] = ~S[1] & ~S[0];
+//        assign enables[1] = ~S[1] & S[0];
+//        assign enables[2] = S[1] & ~S[0];
+//        assign enables[3] = S[1] & S[0];
+        
+//        assign O = (D[3] & enables[3]) | (D[2] & enables[2]) | (D[1] & enables[1]) | (D[0] & enables[0]);
+        
+        
+        //always and case
+
+        
+        always @(D or S) begin
+
+            case(S)
+                2'b00: O <= D[0];
+                2'b01: O <= D[1];
+                2'b10: O <= D[2];
+                2'b11: O <= D[3];
+            endcase
+        end
+        
+endmodule
+
 
 module DEMUX(input D,
             input [1:0] S,

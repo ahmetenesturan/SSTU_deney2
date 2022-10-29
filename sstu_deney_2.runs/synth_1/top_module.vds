@@ -2,53 +2,32 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Oct 27 01:15:16 2022
-# Process ID: 15136
+# Start of session at: Sat Oct 29 14:32:34 2022
+# Process ID: 8680
 # Current directory: C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.runs/synth_1
 # Command line: vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
 # Log file: C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.runs/synth_1/top_module.vds
 # Journal file: C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top_module.tcl -notrace
-Command: synth_design -top top_module -part xc7a100tcsg324-1
+Command: synth_design -top top_module -part xc7a50ticsg324-1L
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a50ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a50ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16032 
+INFO: Helper process launched with PID 3804 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 388.969 ; gain = 99.328
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 388.453 ; gain = 98.781
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/top_module.v:3]
-INFO: [Synth 8-6157] synthesizing module 'ENCODER' [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/MSI_Library.v:33]
-INFO: [Synth 8-6157] synthesizing module 'or_gate' [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/imports/new/SSI_Library.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'or_gate' (1#1) [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/imports/new/SSI_Library.v:8]
-INFO: [Synth 8-6157] synthesizing module 'not_gate' [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/imports/new/SSI_Library.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'not_gate' (2#1) [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/imports/new/SSI_Library.v:14]
-INFO: [Synth 8-6157] synthesizing module 'and_gate' [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/imports/new/SSI_Library.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'and_gate' (3#1) [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/imports/new/SSI_Library.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'ENCODER' (4#1) [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/MSI_Library.v:33]
-WARNING: [Synth 8-3848] Net cat in module/entity top_module does not have driver. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/top_module.v:7]
-WARNING: [Synth 8-3848] Net an in module/entity top_module does not have driver. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/top_module.v:8]
-WARNING: [Synth 8-3848] Net dp in module/entity top_module does not have driver. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/top_module.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'top_module' (5#1) [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/top_module.v:3]
-WARNING: [Synth 8-3331] design top_module has unconnected port led[6]
-WARNING: [Synth 8-3331] design top_module has unconnected port led[5]
-WARNING: [Synth 8-3331] design top_module has unconnected port led[4]
-WARNING: [Synth 8-3331] design top_module has unconnected port led[3]
-WARNING: [Synth 8-3331] design top_module has unconnected port led[2]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[6]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[5]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[4]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[3]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[2]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[1]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[0]
-WARNING: [Synth 8-3331] design top_module has unconnected port an[3]
-WARNING: [Synth 8-3331] design top_module has unconnected port an[2]
-WARNING: [Synth 8-3331] design top_module has unconnected port an[1]
-WARNING: [Synth 8-3331] design top_module has unconnected port an[0]
-WARNING: [Synth 8-3331] design top_module has unconnected port dp
+INFO: [Synth 8-6157] synthesizing module 'DECODER' [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/MSI_Library.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/MSI_Library.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'DECODER' (1#1) [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/MSI_Library.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (2#1) [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/top_module.v:3]
+WARNING: [Synth 8-3917] design top_module has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design top_module has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design top_module has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_module has port an[0] driven by constant 0
 WARNING: [Synth 8-3331] design top_module has unconnected port sw[7]
 WARNING: [Synth 8-3331] design top_module has unconnected port sw[6]
 WARNING: [Synth 8-3331] design top_module has unconnected port sw[5]
@@ -58,7 +37,7 @@ WARNING: [Synth 8-3331] design top_module has unconnected port btn[2]
 WARNING: [Synth 8-3331] design top_module has unconnected port btn[1]
 WARNING: [Synth 8-3331] design top_module has unconnected port btn[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 444.832 ; gain = 155.191
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 444.984 ; gain = 155.312
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -71,41 +50,17 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 444.832 ; gain = 155.191
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 444.984 ; gain = 155.312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 444.832 ; gain = 155.191
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 444.984 ; gain = 155.312
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:25]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:38]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:38]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
@@ -130,53 +85,37 @@ Resolution: If [get_<value>] was used to populate the object, check to make sure
 WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:45]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:45]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BTNC'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:77]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BTNU'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:78]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:78]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BTNL'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:79]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:79]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BTNR'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:80]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:80]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BTND'. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:81]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc:81]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/constrs_1/imports/Vivado/Nexys-A7-50T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 736.945 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 678.129 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 736.945 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 678.129 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 736.945 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 736.945 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 678.129 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 678.129 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 736.945 ; gain = 447.305
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 678.129 ; gain = 388.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7a100tcsg324-1
+Loading part: xc7a50ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 736.945 ; gain = 447.305
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 678.129 ; gain = 388.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 736.945 ; gain = 447.305
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 678.129 ; gain = 388.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 736.945 ; gain = 447.305
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 678.129 ; gain = 388.457
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-223] decloning instance 'encoder1/or1' (or_gate) to 'encoder1/or3'
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -201,8 +140,8 @@ Finished RTL Hierarchical Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 240 (col length:80)
-BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
@@ -210,23 +149,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design top_module has unconnected port led[6]
-WARNING: [Synth 8-3331] design top_module has unconnected port led[5]
-WARNING: [Synth 8-3331] design top_module has unconnected port led[4]
-WARNING: [Synth 8-3331] design top_module has unconnected port led[3]
-WARNING: [Synth 8-3331] design top_module has unconnected port led[2]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[6]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[5]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[4]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[3]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[2]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[1]
-WARNING: [Synth 8-3331] design top_module has unconnected port cat[0]
-WARNING: [Synth 8-3331] design top_module has unconnected port an[3]
-WARNING: [Synth 8-3331] design top_module has unconnected port an[2]
-WARNING: [Synth 8-3331] design top_module has unconnected port an[1]
-WARNING: [Synth 8-3331] design top_module has unconnected port an[0]
-WARNING: [Synth 8-3331] design top_module has unconnected port dp
+WARNING: [Synth 8-3917] design top_module has port an[3] driven by constant 1
+WARNING: [Synth 8-3917] design top_module has port an[2] driven by constant 1
+WARNING: [Synth 8-3917] design top_module has port an[1] driven by constant 1
+WARNING: [Synth 8-3917] design top_module has port an[0] driven by constant 0
 WARNING: [Synth 8-3331] design top_module has unconnected port sw[7]
 WARNING: [Synth 8-3331] design top_module has unconnected port sw[6]
 WARNING: [Synth 8-3331] design top_module has unconnected port sw[5]
@@ -236,7 +162,7 @@ WARNING: [Synth 8-3331] design top_module has unconnected port btn[2]
 WARNING: [Synth 8-3331] design top_module has unconnected port btn[1]
 WARNING: [Synth 8-3331] design top_module has unconnected port btn[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 736.945 ; gain = 447.305
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 678.129 ; gain = 388.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -248,13 +174,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 770.629 ; gain = 480.988
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 761.332 ; gain = 471.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 770.629 ; gain = 480.988
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 761.332 ; gain = 471.660
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -266,7 +192,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 780.355 ; gain = 490.715
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 770.918 ; gain = 481.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -290,7 +216,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 780.355 ; gain = 490.715
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 770.918 ; gain = 481.246
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -303,7 +229,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 780.355 ; gain = 490.715
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 770.918 ; gain = 481.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -315,25 +241,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 780.355 ; gain = 490.715
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 770.918 ; gain = 481.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 780.355 ; gain = 490.715
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 770.918 ; gain = 481.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 780.355 ; gain = 490.715
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 770.918 ; gain = 481.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 780.355 ; gain = 490.715
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 770.918 ; gain = 481.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -346,43 +272,41 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |LUT2  |     1|
-|2     |LUT3  |     1|
-|3     |LUT4  |     1|
-|4     |IBUF  |     4|
-|5     |OBUF  |     3|
-|6     |OBUFT |    17|
-+------+------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |    16|
+|2     |IBUF |     4|
+|3     |OBUF |    20|
++------+-----+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |    27|
-+------+---------+-------+------+
++------+-----------+--------+------+
+|      |Instance   |Module  |Cells |
++------+-----------+--------+------+
+|1     |top        |        |    40|
+|2     |  decoder1 |DECODER |     8|
++------+-----------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 780.355 ; gain = 490.715
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 770.918 ; gain = 481.246
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 780.355 ; gain = 198.602
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 780.355 ; gain = 490.715
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 770.918 ; gain = 248.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 770.918 ; gain = 481.246
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 789.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 784.164 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-21 Infos, 74 Warnings, 21 Critical Warnings and 0 Errors encountered.
+15 Infos, 32 Warnings, 8 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 789.934 ; gain = 512.203
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 789.934 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 784.164 ; gain = 506.457
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 784.164 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.runs/synth_1/top_module.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 27 01:15:40 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 29 14:32:57 2022...

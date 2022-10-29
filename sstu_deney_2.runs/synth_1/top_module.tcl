@@ -17,10 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
-create_project -in_memory -part xc7a100tcsg324-1
+create_project -in_memory -part xc7a50ticsg324-1L
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -29,12 +26,11 @@ set_property webtalk.parent_dir C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2
 set_property parent.project_path C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+set_property board_part digilentinc.com:nexys-a7-50t:part0:1.2 [current_project]
 set_property ip_output_repo c:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/MSI_Library.v
-  C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/imports/new/SSI_Library.v
   C:/Users/ahmet/Projects/Vivado/sstu/sstu_deney_2/sstu_deney_2.srcs/sources_1/new/top_module.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -51,7 +47,7 @@ set_property used_in_implementation false [get_files C:/Users/ahmet/Projects/Viv
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top top_module -part xc7a100tcsg324-1
+synth_design -top top_module -part xc7a50ticsg324-1L
 
 
 # disable binary constraint mode for synth run checkpoints
